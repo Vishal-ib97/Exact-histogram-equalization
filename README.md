@@ -1,1 +1,3 @@
 # Exact-histogram-equalization
+
+The input image is convolved with k averaging kernels and each image is flattened and stored as one column in a matrix q. Hence q is a matrix of size MN x k (M rows and N columns) with each row containing the average values of each pixel. The q matrix is now sorted in a lexicographical way. Now after the pixels are sorted, they need to be split into bins and assigned values such that the value of a pixel in bin j equals j. Once the pixel values are assigned, they need to be reordered to the original order and assigned to respective locations to obtain the equalized image.
